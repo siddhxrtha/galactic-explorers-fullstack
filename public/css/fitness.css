@@ -1,0 +1,237 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(180.5deg, rgb(0, 128, 128) 8.5%, rgb(174, 206, 100) 118.2%);
+  background-size: cover;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+  font-family: 'Sansita One', cursive;
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Section Titles */
+.container h2 {
+  font-size: 2.2rem;
+  background: linear-gradient(107deg, rgb(255, 67, 5) 11.1%, rgb(245, 135, 0) 95.3%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Centers the modal vertically */
+.modal-dialog {
+  margin-top: 10vh;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Modal header */
+.modal-header {
+  background-color: #2b6777;
+  color: #ffffff;
+  border-bottom: 2px solid #52ab98;
+}
+
+/* Modal title */
+.modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Modal body */
+.modal-body {
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Notes textarea */
+#completionNotes {
+  border: 2px solid #52ab98;
+  border-radius: 8px;
+}
+
+/* Modal footer buttons */
+.modal-footer .btn {
+  padding: 0.6rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.modal-footer .btn-success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.modal-footer .btn:hover {
+  filter: brightness(1.2);
+}
+
+/* Card container */
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card title */
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2b6777;
+}
+
+/* Card text */
+.card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Button Styles */
+.btn-complete {
+  background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-complete:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.btn-attempt {
+  background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
+  color: #000000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-attempt:hover {
+  background-color: #5a6268; /* Darker grey */
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Button Container Spacing */
+.d-flex.gap-2 button {
+  padding: 0.5rem 1rem;
+}
+
+.creator-badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem; /* Smaller padding for a compact badge */
+  border-radius: 20px; /* Slightly rounded edges */
+  font-size: 0.85rem; /* Smaller font size */
+  font-weight: 500; /* Medium font weight for readability */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+#create-challenge-section{
+  background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%);
+  background-size: cover;
+  border-radius: 50px;
+}
+.creator-badge.you {
+  background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  color: rgb(0, 0, 0);
+}
+
+.creator-badge.others {
+  background-color: #e9ecef; /* Light grey for others */
+  color: #495057;
+}
+
+/* Styling for the Challenges List */
+#challengesList {
+  max-height: 400px; /* Set max height and allow scrolling */
+  overflow-y: auto;
+  border-radius: 0.5rem;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa; /* Subtle hover effect */
+  color: #007bff;
+}
+
+/* Styling for the Completion Records Table */
+.table {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.table thead {
+  background-color: #f8f9fa;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-header {
+  border-bottom: 2px solid #af67fc;
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+}
+
+/* Text alignment for smaller screens */
+@media (max-width: 768px) {
+  .card-header h3 {
+    font-size: 1rem;
+  }
+
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+
+  .table th,
+  .table td {
+    font-size: 0.85rem;
+  }
+}

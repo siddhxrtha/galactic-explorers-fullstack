@@ -1,0 +1,40 @@
+/* ============================
+   Toast Notifications
+============================ */
+.toast {
+  max-width: 300px;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+}
+
+.toast.fade-out {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.toast-header {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.toast-body {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  background-color: transparent;
+}
+
+.toast .btn-close {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  opacity: 0.5;
+}
+
+.toast .btn-close:hover {
+  opacity: 1;
+}
+
+/* Toast Container */
+#toast-container {
+  z-index: 1055;
+}

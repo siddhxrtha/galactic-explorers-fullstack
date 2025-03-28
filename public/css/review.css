@@ -1,0 +1,291 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(69.5deg, rgb(40, 48, 68) 2.3%, rgb(1, 179, 201) 97.6%);
+  color: #ffffff;
+}
+
+.hero {
+  background: radial-gradient(circle at 10% 20%, rgb(59, 149, 237) 0%, rgb(7, 91, 173) 90%);
+  color: white;
+  padding: 4rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-family: 'Sansita One', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Review Form Styling */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);  
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.card .form-control {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.card .form-control::placeholder {
+  color: #bdbdbd;
+}
+
+.card textarea {
+  resize: none;
+}
+
+.card .btn {
+  background: linear-gradient(to right, #ff8008, #ffc837);
+  color: #fff;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Star Rating Styling */
+.star-rating {
+  font-size: 2rem;
+  letter-spacing: 10px;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.star-rating .bi-star-fill {
+  text-shadow: 0 0 10px #ffd700;
+}
+
+.star-rating .bi {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.star-rating .bi:hover,
+.star-rating .bi.bi-star-fill {
+  transform: scale(1.4);
+  color: #ffc837;
+}
+
+/* Reviews Section */
+#reviewsContainer .card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+#reviewsContainer .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+}
+
+#reviewsContainer .card .card-title {
+  font-size: 1.4rem;
+  color: #ff8008;
+  font-weight: bold;
+}
+
+#reviewsContainer .card .card-text {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+#reviewsContainer .card .card-text strong {
+  color: #ffc837;
+}
+
+/* Dropdown Styling */
+#challengeDropdown {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 2px solid #1e90ff;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+#challengeDropdown:hover {
+  border-color: #00bfff;
+  background: linear-gradient(135deg, #00bfff, #1e90ff);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#challengeDropdown:focus {
+  outline: none;
+  border-color: #00bfff;
+  background: linear-gradient(135deg, #00bfff, #87cefa);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+#challengeDropdown option {
+  background-color: #ffffff;
+  color: #00308F;
+  font-family: "Poppins", sans-serif;
+  padding: 8px;
+}
+
+#submit-review-text{
+  background: linear-gradient(109.6deg, rgb(9, 9, 121) 11.2%, rgb(144, 6, 161) 53.7%, rgb(0, 212, 255) 100.2%);
+  border-radius: 20px;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#challengeDropdown option:disabled {
+  color: #ced4da;
+}
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer .btn {
+  margin-top: auto;
+}
+
+.modal-header {
+  background: linear-gradient(45deg, #ff4d4d, #ff9999);
+  color: white;
+}
+
+/* Delete Icon Wrapper */
+.delete-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add a subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover Effect */
+.delete-icon:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); 
+  background-color: #f8d7da; 
+}
+
+/* Wrapper for delete icon and text */
+.delete-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden delete text */
+.delete-text {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem; /* Adjust spacing between the icon and the text */
+  transform: translateY(-50%);
+  background-color: #f8d7da;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+  pointer-events: none; /* Prevent the text from interfering with hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+/* Show delete text on hover */
+.delete-icon-wrapper:hover .delete-text {
+  opacity: 1;
+}
+
+/* Style for delete icon */
+.delete-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect for icon */
+.delete-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+  background-color: #f8d7da;
+}
+
+/* Edit Icon Wrapper */
+.edit-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover Effect for Edit Icon */
+.edit-icon:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); 
+  background-color: #cfe2ff; 
+  color: #084298; 
+}
+
+/* Wrapper for edit icon and text */
+.edit-icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hidden edit text */
+.edit-text {
+  position: absolute;
+  top: 50%;
+  right: 2.5rem; 
+  transform: translateY(-50%);
+  background-color: #cfe2ff; /* Light blue background for hover text */
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0; /* I managed to Hide by default */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for hover */
+  pointer-events: none; /* Prevent the text from interfering with hover */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+}
+
+/* Show edit text on hover */
+.edit-icon-wrapper:hover .edit-text {
+  opacity: 1; /* Makes the text visible, on hover! */
+}

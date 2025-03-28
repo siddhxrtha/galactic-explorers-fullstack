@@ -1,0 +1,252 @@
+/* ============================
+   General Styling
+   ============================ */
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+  Marketplace Section Styling
+============================ */
+#opening-text{
+  font-family: 'Sansita One', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.marketplace {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.marketplace h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* ============================
+     Hero Section
+============================ */
+.marketplace-hero {
+  position: relative;
+  height: 300px; /* Hero section height */
+  background-image: url("https://i.pinimg.com/originals/1a/a2/00/1aa2008c04d15f46d38b797cb1452ed4.gif"); /* Hero background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px; /* Spacing below the hero section */
+}
+
+.marketplace-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+}
+
+.marketplace-hero .content {
+  z-index: 2; 
+}
+
+.marketplace-hero h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.marketplace-hero p {
+  font-size: 1.2rem;
+  color: #f4f4f9;
+}
+
+/* ============================
+     Spin Image Section
+     ============================ */
+.spin-image {
+  background: linear-gradient(103deg, rgb(235, 225, 188) 7.2%, rgb(232, 188, 234) 57.5%, rgb(203, 209, 244) 90.7%);
+  padding: 30px 0;
+}
+
+.spin-image .Sirv {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================
+     Item Card Styling
+     ============================ */
+.card {
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px); /* Lift effect on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 220px; /* Consistent image height */
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-body h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #212529;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+/* ============================
+ Button Styling
+ ============================ */
+ .btn-buy {
+    background: linear-gradient(90deg, #6a1ea3, #5a189a); /* Gradient button */
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+.btn-buy:hover {
+    background: linear-gradient(
+      90deg,
+      #5a189a,
+      #4a1373
+    );
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(90, 24, 154, 0.3);
+}
+.btn-buy:active {
+    background: #4a1373;
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(90, 24, 154, 0.2);
+}
+
+/* ============================
+     Owned Button Styling
+     ============================ */
+.btn-buy.owned {
+    background: radial-gradient(848px at 10% 20%, rgba(174, 231, 165, 0.9) 0%, rgb(181, 205, 154) 90%);
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    transition: all 0.3s ease;
+    width: 100%;
+    cursor: not-allowed; 
+    opacity: 0.8;
+}
+.btn-buy.owned:hover {
+    background: radial-gradient(848px at 10% 20%, rgba(174, 231, 165, 0.9) 0%, rgb(181, 205, 154) 90%);
+}
+    
+/* ============================
+     Alignment and Consistency
+     ============================ */
+.card {
+  height: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-footer .btn {
+  margin-top: auto;
+}
+
+/* ============================
+     Responsive Adjustments
+     ============================ */
+@media (max-width: 768px) {
+  .card img {
+    height: 160px;
+  }
+
+  .marketplace h1 {
+    font-size: 2rem;
+  }
+
+  .marketplace-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .marketplace-hero p {
+    font-size: 1rem;
+  }
+
+  .card-body h5 {
+    font-size: 1.1rem;
+  }
+
+  .card-body p {
+    font-size: 0.85rem;
+  }
+
+  .btn-buy {
+    font-size: 0.9rem;
+  }
+}
+
+/* Button Styles */
+#main-btn {
+  background-color: #722dc0;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  font-family: 'Sansita One', sans-serif;
+}
+
+#main-btn:hover {
+  letter-spacing: 3px;
+  transform: scale(1.1);
+}
+
+#main-btn:active {
+  transform: translateY(10px);
+}

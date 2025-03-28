@@ -1,0 +1,197 @@
+/* ============================
+   Font Imports
+============================ */
+@font-face {
+  font-family: "Margesh";
+  src: url("../assets/fonts/Margesh-BF654d9b2e77876.otf") format("opentype"); /* Custom font for titles */
+}
+
+@font-face {
+  font-family: "Amoera";
+  src: url("../assets/fonts/amoera-personal-use-only.otf") format("opentype"); /* Custom decorative font */
+}
+
+/* ============================
+   General Styles
+============================ */
+body {
+  background: url("https://4kwallpapers.com/images/wallpapers/purple-planet-saturn-rings-nebula-galaxy-astronomy-stars-3840x2160-6416.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+   Jumbotron Section
+============================ */
+.jumbotron {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 300px;
+}
+
+#welcome-text {
+  color: white;
+  font-family: "Amoera", sans-serif;
+  letter-spacing: 3px;
+}
+
+#welcome-text-subtitle {
+  color: white;
+}
+
+/* ============================
+   Welcome Strip
+============================ */
+.welcome-strip {
+  background-image: linear-gradient(99.9deg, rgba(27, 24, 31, 1) 21.2%, rgba(50, 4, 89, 1) 84.8%);
+  color: #faeda4;
+  font-family: "Margesh", sans-serif;
+  text-align: center;
+}
+
+/* ============================
+   Carousel Section
+============================ */
+.carousel-container {
+  height: 500px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.carousel-item img {
+  height: 475px;
+  width: 475px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption h5 {
+  font-size: 1.3rem;
+  font-weight: 450;
+  font-family: 'Sansita One', sans-serif;
+}
+
+.carousel-caption p {
+  font-size: 0.9rem;
+}
+
+/* ============================
+   Login Form Styles
+============================ */
+.login-form-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.6);
+  height: 465px;
+  width: 475px;
+  display: flex;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  color: #fff;
+  font-weight: 150;
+  font-family: "Margesh", sans-serif;
+}
+
+input.form-control {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #000000;
+  color: #fff;
+}
+
+.form-floating .form-control {
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-floating label {
+  color: #f4f4f4;
+}
+
+/* ============================
+   Button Styles
+============================ */
+#main-btn {
+  font-family: "Margesh", sans-serif;
+  background-color: #4a1373;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+#main-btn:hover {
+  letter-spacing: 3px;
+  transform: scale(1.1);
+}
+
+#main-btn:active {
+  transform: translateY(10px);
+}
+
+.btn-primary {
+  background-color: #852ec3;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6a1ea3;
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #4a1373;
+}
+
+/* ============================
+   Toast Notifications
+============================ */
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* ============================
+   Responsive Adjustments
+============================ */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .login-form-container {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+}

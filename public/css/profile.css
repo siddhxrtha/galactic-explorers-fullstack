@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================
+     Profile Section
+============================ */
+.profile-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: #0288d1;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+
+.bi-person-circle {
+  font-size: 3rem;
+  color: #0288d1;
+}
+
+.list-group-item {
+  font-size: 1rem;
+  padding: 15px 20px;
+  background-color: #fafafa;
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+/* ============================
+     Inventory Section
+============================ */
+.inventory-section {
+  padding: 40px 0;
+}
+
+.inventory-section .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.inventory-section .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inventory-section .card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.inventory-section .card-text {
+  font-size: 0.9rem;
+  color: #757575;
+}
+
+.inventory-section .card-footer {
+  border-top: 1px solid #ddd;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+/* ============================
+     Button Styling
+============================ */
+.btn-sell {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-sell:hover {
+  background: linear-gradient(90deg, #e64a19, #f57c00);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 87, 34, 0.3);
+}
+
+.btn-sell:active {
+  background: #d84315;
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(255, 87, 34, 0.2);
+}
+
+/* ============================
+     Modal Styles
+============================ */
+.modal-content {
+  border-radius: 15px;
+}
+
+.modal-header {
+  background-color: #0288d1;
+  color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-body img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* ============================
+     Planets Explored Section
+============================ */
+.planets-explored-section {
+  padding: 40px 0;
+  background: #540054;
+  background: -webkit-linear-gradient(to right, #540054, #bf4193);
+  background: linear-gradient(to right, #540054, #bf4193); 
+  color: #ffffff;
+  text-align: center;
+}
+
+.planets-explored-section h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.planets-explored-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.planets-explored-section .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.planets-explored-section .card-title {
+  color: #2a5298;
+  font-weight: bold;
+}
+
+.planets-explored-section .card-text {
+  color: #555;
+}
+
+.planets-explored-section .btn-primary {
+  background: linear-gradient(90deg, #4a90e2, #9013fe); /* Cool blue to vibrant purple */
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.planets-explored-section .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(144, 19, 254, 0.3); /* Add a purple glow effect */
+}
+
+#farewellLine {
+  width: 0;
+  height: 4px;
+  background-color: #800020;
+  transition: width 10s linear;
+  margin-bottom: 1rem;
+}
+
+/* ============================
+   CHARTS SECTION STYLING
+=============================== */
+.charts-section {
+  background: #121212; 
+  padding: 50px 0;
+  margin-top: 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Chart Container */
+.chart-container {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chart-container:hover {
+  transform: scale(1.02); 
+}
+
+/* Chart Title */
+.chart-container h5 {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Chart Canvas */
+.chart-container canvas {
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .charts-section {
+      padding: 30px 10px;
+  }
+  .chart-container {
+      margin-bottom: 20px;
+  }
+}

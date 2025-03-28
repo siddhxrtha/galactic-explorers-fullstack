@@ -1,0 +1,52 @@
+//////////////////////////////////////////////////////
+// TEST CONTROLLER FOR TOKEN PRE-GENERATION
+//////////////////////////////////////////////////////
+module.exports.preTokenGenerate = (req, res, next) => {
+	res.locals.userId = req.body.id;
+	next();
+};
+
+//////////////////////////////////////////////////////
+// TEST CONTROLLER FOR BEFORE SENDING TOKEN
+//////////////////////////////////////////////////////
+module.exports.beforeSendToken = (req, res, next) => {
+	res.locals.message = `Token is generated.`;
+	next();
+};
+
+//////////////////////////////////////////////////////
+// TEST CONTROLLER FOR TOKEN VERIFICATION
+//////////////////////////////////////////////////////
+module.exports.showTokenVerified = (req, res, next) => {
+	res.status(200).json({
+		userId: res.locals.userId,
+		message: "Token is verified.",
+	});
+};
+
+//////////////////////////////////////////////////////
+// TEST CONTROLLER FOR BCRYPT COMPARE
+//////////////////////////////////////////////////////
+module.exports.showCompareSuccess = (req, res, next) => {
+	res.status(200).json({
+		message: "Compare is successful.",
+	});
+};
+
+//////////////////////////////////////////////////////
+// TEST CONTROLLER FOR BCRYPT PRE-COMPARE
+//////////////////////////////////////////////////////
+module.exports.preCompare = (req, res, next) => {
+	res.locals.hash = req.body.hash;
+	next();
+};
+
+//////////////////////////////////////////////////////
+// TEST CONTROLLER FOR BCRYPT HASHING
+//////////////////////////////////////////////////////
+module.exports.showHashing = (req, res, next) => {
+	res.status(200).json({
+		hash: res.locals.hash,
+		message: `Hash is successful.`,
+	});
+};

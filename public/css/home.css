@@ -1,0 +1,102 @@
+/* Font Styles */
+@font-face {
+  font-family: "Amoera";
+  src: url("../assets/fonts/amoera-personal-use-only.otf") format("opentype");
+  font-display: swap;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Buttons */
+#main-btn {
+  background-color: #722dc0;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  font-family: 'Sansita One', sans-serif;
+}
+
+#main-btn:hover {
+  letter-spacing: 3px;
+  transform: scale(1.1);
+}
+
+#main-btn:active {
+  transform: translateY(10px);
+}
+
+/* Text Styling */
+#welcome-text-subtitle {
+  font-family: 'Sansita One', sans-serif;
+}
+
+#welcome-text {
+  font-family: "Amoera", sans-serif;
+  letter-spacing: 3px;
+}
+
+/* Hero Section */
+.hero {
+  background: url("https://giffiles.alphacoders.com/211/211255.gif") center/cover;
+  color: #fff;
+  padding: 90px 0;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Features Section */
+#features .btn {
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+/* Leaderboard Section */
+#leaderboard-section h2 {
+  background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+/* Table */
+.table {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.table thead {
+  background: linear-gradient(to right, #722dc0, #b84dff);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+  padding: 18px;
+}
+
+.table-success {
+  font-family: "Sansita One", sans-serif;
+}

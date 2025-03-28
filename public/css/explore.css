@@ -1,0 +1,297 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Hero Section */
+.explore-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://i.pinimg.com/originals/ca/4d/23/ca4d2391455ade48053c0b6861842574.gif") no-repeat center center/cover;
+  height: 85vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-hero .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.explore-hero h1 {
+  font-family: "Sansita One", cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.explore-hero .btn-explore {
+  background-color: #ff6f00;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.explore-hero .btn-explore:hover {
+  background-color: #ff8c42;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 3px;
+}
+
+/* Quote Strip */
+.quote-strip {
+  background-color: #343a40;
+  color: #ffd700;
+  font-family: "Sansita One", cursive;
+  padding: 10px 0;
+}
+
+/* Planets Section */
+.explore-planets {
+  background-color: #f8f9fa;
+}
+
+.explore-planets h3 {
+  color: #343a40;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  border-bottom: 3px solid #4a1373;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.card-body h5 {
+  font-size: 1.3rem;
+  background: linear-gradient(red, rgb(230, 68, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.card-body ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.card-body .btn {
+  background: radial-gradient(circle at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgb(189, 250, 205) 35.6%, rgb(243, 250, 189) 52.9%, rgb(250, 227, 189) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  color: #000000;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.card-body .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Toast Container */
+#toast-container {
+  z-index: 1055;
+}
+/* Modal Styling */
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  border: none;
+}
+
+.modal-header {
+  background-color: #4a1373;
+  color: #ffffff;
+  padding: 20px;
+  border-bottom: none;
+}
+
+.modal-header .modal-title {
+  font-family: "Sansita One", cursive;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.modal-header .btn-close {
+  color: #fff;
+  opacity: 1;
+  font-size: 1.2rem;
+}
+
+.modal-body {
+  padding: 30px;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+.modal-body img {
+  border-radius: 10px;
+  border: 2px solid #4a1373;
+  margin-bottom: 20px;
+}
+
+#modalPlanetNameLarge {
+  color: #4a1373;
+  font-family: "Sansita One", cursive;
+  text-shadow: 1px 1px 5px rgba(74, 19, 115, 0.3);
+}
+
+#modalPlanetDescription {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+#modalRequiredItems {
+  padding-left: 20px;
+}
+
+#modalRequiredItems li {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+  color: #4a1373;
+}
+
+#modalRewardSkillpoints {
+  color: #ff6f00;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#exploreNowButton {
+  background: linear-gradient(to right, #ff6f00, #f85a16);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+#exploreNowButton:hover {
+  background: linear-gradient(to right, #f85a16, #ff6f00);
+  box-shadow: 0 4px 12px rgba(248, 90, 22, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Modal Animation */
+
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.modal-content {
+  background: rgba(10, 10, 30, 0.9);
+  border: 2px solid rgba(138, 43, 226, 0.3);
+  box-shadow: 0 0 25px rgba(138, 43, 226, 0.7), 0 0 50px rgba(75, 0, 130, 0.6);
+  border-radius: 12px;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(8px);
+  animation: stars 3s infinite alternate ease-in-out;
+}
+
+@keyframes stars {
+  0% { background: rgba(0, 0, 30, 0.8); }
+  100% { background: rgba(0, 0, 40, 0.85); }
+}
+
+.modal.show .modal-content {
+  animation: floaty 5s infinite ease-in-out;
+}
+
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ============================
+  Spin Image Section
+ ============================ */
+ .spin-image {
+  background: linear-gradient(89.7deg, rgb(0, 32, 95) 2.8%, rgb(132, 53, 142) 97.8%);
+  padding: 30px 0;
+}
+
+.spin-image .Sirv {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for the Already Explored button */
+.card-body .btn-secondary {
+  background: radial-gradient(848px at 10% 20%, rgba(174, 231, 165, 0.9) 0%, rgb(181, 205, 154) 90%);
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: not-allowed; 
+  opacity: 0.8;
+}
+
+.card-body .btn-secondary:hover {
+  background: radial-gradient(848px at 10% 20%, rgba(174, 231, 165, 0.9) 0%, rgb(181, 205, 154) 90%);
+}
+/* Tooltip Styling */
+.tooltip-item {
+  cursor: pointer; 
+}
+
+.tooltip .tooltip-inner {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+}
